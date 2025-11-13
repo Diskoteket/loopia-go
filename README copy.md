@@ -1,2 +1,0 @@
-# loopia
-Loopia API Golang
