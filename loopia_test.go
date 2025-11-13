@@ -1,12 +1,12 @@
 package loopia
 
 import (
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
-	"testing"
 	"strings"
-	"fmt"
+	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -45,7 +45,7 @@ func TestClient_Credentials(t *testing.T) {
 		}
 
 		xmlParamPattern := "<param><value>%s</value></param>"
-		search := []string {
+		search := []string{
 			fmt.Sprintf(xmlParamPattern, "<string>loopia@loopiaapi</string>"),
 			fmt.Sprintf(xmlParamPattern, "<string>verysecret</string>"),
 			fmt.Sprintf(xmlParamPattern, "<string></string>"),
