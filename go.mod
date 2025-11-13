@@ -1,4 +1,4 @@
-module github.com/jonlil/loopia-go
+module github.com/diskoteket/loopia-go
 
 go 1.24.6
 
