@@ -6,8 +6,9 @@ import (
 	"testing"
 
 	"fmt"
-	"github.com/stretchr/testify/assert"
 	"strings"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func zoneRecordsHandler(t *testing.T) func(w http.ResponseWriter, r *http.Request) {
